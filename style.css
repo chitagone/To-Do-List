@@ -1,0 +1,208 @@
+/* Apply a universal reset for margin and padding to all elements, set default font family to 'Poppins', and include padding and border in the element's total width and height */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Apply styles to the container class */
+
+.container {
+    /* Set width to 100% */
+    width: 100%;
+    /* Set minimum height to 100% of the viewport height */
+    min-height: 100vh;
+    /* Apply a linear gradient background from top left to bottom right with specified colors */
+    background: linear-gradient(135deg, #153677, #4e85af);
+    /* Add padding around the container */
+    padding: 10px;
+}
+
+
+/* Apply styles to the todo-app class */
+
+.todo-app {
+    /* Set width to 100% */
+    width: 100%;
+    /* Set maximum width to 540px */
+    max-width: 540px;
+    /* Set background color to white */
+    background-color: #fff;
+    /* Center the todo-app horizontally and add space above it */
+    margin: 100px auto 20px;
+    /* Add padding around the todo-app */
+    padding: 40px 30px 70px;
+    /* Add rounded corners to the todo-app */
+    border-radius: 10px;
+}
+
+
+/* Apply styles to the h2 element within the todo-app */
+
+.todo-app h2 {
+    /* Set text color to dark blue */
+    color: #002765;
+    /* Arrange child elements in a row and align them vertically */
+    display: flex;
+    align-items: center;
+    /* Add space below the heading */
+    margin-bottom: 20px;
+}
+
+
+/* Apply styles to the image element within the h2 element */
+
+.todo-app h2 img {
+    /* Set width to 30px */
+    width: 30px;
+    /* Add space to the left of the image */
+    margin-left: 10px;
+}
+
+
+/* Apply styles to the row class */
+
+.row {
+    /* Arrange child elements in a row and align them vertically */
+    display: flex;
+    align-items: center;
+    /* Add space between the child elements */
+    justify-content: space-between;
+    /* Set background color */
+    background: #d0e0f0;
+    /* Add rounded corners */
+    border-radius: 30px;
+    /* Add padding to the left side */
+    padding-left: 20px;
+    /* Add space below the row */
+    margin-bottom: 25px;
+}
+
+
+/* Apply styles to the input element */
+
+input {
+    /* Allow the input field to grow and shrink as needed */
+    flex: 1;
+    /* Remove default border and outline */
+    border: none;
+    outline: none;
+    /* Set background color to transparent */
+    background: transparent;
+    /* Add padding around the input text */
+    padding: 10px;
+    /* Set font size to 14px */
+    font-size: 14px;
+}
+
+
+/* Apply styles to the button element */
+
+button {
+    /* Remove default border and outline */
+    border: none;
+    outline: none;
+    /* Add padding around the button text */
+    padding: 16px 50px;
+    /* Set background color */
+    background: #4e85af;
+    /* Set text color to white */
+    color: #fff;
+    /* Set font size to 16px */
+    font-size: 16px;
+    /* Set cursor to pointer to indicate interactivity */
+    cursor: pointer;
+    /* Add rounded corners */
+    border-radius: 40px;
+}
+
+
+/* Apply styles to the list items */
+
+ul li {
+    /* Remove default list-style */
+    list-style: none;
+    /* Set font size to 17px */
+    font-size: 17px;
+    /* Add padding around the list item */
+    padding: 12px 8px 12px 50px;
+    /* Disable text selection */
+    user-select: none;
+    /* Set cursor to pointer to indicate interactivity */
+    cursor: pointer;
+    /* Set position to relative */
+    position: relative;
+}
+
+
+/* Apply styles to the pseudo-element before the list item */
+
+ul li::before {
+    /* Set content to an empty string */
+    content: '';
+    /* Set position to absolute */
+    position: absolute;
+    /* Set height and width */
+    height: 28px;
+    width: 28px;
+    /* Add rounded corners */
+    border-radius: 50%;
+    /* Set background image and position */
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    /* Position the pseudo-element */
+    top: 12px;
+    left: 8px;
+}
+
+
+/* Apply styles to the list items with class 'checked' */
+
+ul li.checked {
+    /* Set text color to gray */
+    color: #555;
+    /* Add line-through decoration to text */
+    text-decoration: line-through;
+}
+
+
+/* Apply styles to the pseudo-element before the checked list item */
+
+ul li.checked::before {
+    /* Change background image to checked icon */
+    background-image: url(img/checked.png);
+}
+
+
+/* Apply styles to the span element within list items */
+
+ul li span {
+    /* Set position to absolute */
+    position: absolute;
+    /* Position the element */
+    right: 0;
+    top: 5px;
+    /* Set height and width */
+    height: 40px;
+    width: 40px;
+    /* Set font size, color, and line height */
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    /* Center text horizontally and vertically */
+    text-align: center;
+    /* Add rounded corners */
+    border-radius: 50%;
+}
+
+
+/* Apply styles to the span element within list items on hover */
+
+ul li span:hover {
+    /* Change background color on hover */
+    background: #d0e0f0;
+}

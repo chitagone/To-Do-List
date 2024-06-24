@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Set the viewport width to the device width and initial scale to 1.0 for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the title of the HTML document -->
+    <title>To do list</title>
+
+    <!-- Link to an external CSS file named "style.css" -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Google Fonts "Poppins" -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container div for the entire content -->
+    <div class="container">
+        <!-- Div for the to-do list app -->
+        <div class="todo-app">
+            <!-- Heading for the to-do list -->
+            <h2>To-Do list <img src="img/icon.png"></h2>
+
+            <!-- Div containing input field and button to add tasks -->
+            <div class="row">
+                <!-- Input field for adding tasks -->
+                <input type="text" id="input-box" placeholder="Add your text">
+
+                <!-- Button to add tasks, triggers the JavaScript function "AddTask()" when clicked -->
+                <button onclick="AddTask()">Add</button>
+            </div>
+
+            <!-- Unordered list to display tasks -->
+            <ul id="list-container">
+                <!-- List items representing tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Include JavaScript file named "index.js" -->
+    <script src="index.js"></script>
+</body>
+
+</html>
